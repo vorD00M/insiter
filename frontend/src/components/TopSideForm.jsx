@@ -11,8 +11,15 @@ import { useState } from 'react';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import CreateIcon from '@mui/icons-material/Create';
 
-export default function TopSideForm() {
+export default function TopSideForm({ onPurposeChange, onColorChange }) {
     const [purpose, setPurpose] = useState('');
+
+    const handleChange = (e) => {
+        const value = e.target.value;
+        setPurpose(value);
+        onPurposeChange?.(value);
+    };
+
     const [industry, setIndustry] = useState('');
     const [name, setName] = useState('');
     const [style, setStyle] = useState('');
@@ -47,7 +54,7 @@ export default function TopSideForm() {
                 <Select
                     displayEmpty
                     value={purpose}
-                    onChange={(e) => setPurpose(e.target.value)}
+                    onChange={handleChange}
                     sx={fieldStyle}
                 >
                     <MenuItem disabled value="">Для чего вам сайт</MenuItem>
@@ -136,7 +143,8 @@ export default function TopSideForm() {
                     type="color"
                     id="color-picker"
                     value={color}
-                    onChange={(e) => setColor(e.target.value)}
+                    defaultValue="#1976d2"
+                    onChange={(e) => onColorChange(e.target.value)}
                     style={{ display: 'none' }}
                 />
             </Box>

@@ -1,0 +1,230 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+a {
+    background-color: transparent;
+}
+
+img {
+    border: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.w-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+}
+
+.w-nav {
+    position: relative;
+    background: rgb(221, 221, 221);
+    z-index: 1000;
+}
+
+.w-nav-brand {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.w-nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-nav-link.w--current {
+    color: rgb(0, 130, 243);
+}
+
+.w-nav-menu {
+    position: relative;
+    float: right;
+}
+
+.w-nav-overlay {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+.w-nav-button {
+    position: relative;
+    float: right;
+    padding: 18px;
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+:root {
+    --color-brand--secondary: #1e1e1e;
+    --color-neutral--white: white;
+    --color-neutral--grey: #f7f7f7;
+    --color-brand--primary: #584efe;
+    --color-neutral--black: black;
+    --color-neutral--transparent: transparent;
+    --color-brand--tertiary: #eb1362;
+    --color-brand--alternative: #1e4aa2;
+    --color-brand--success: #45dc84;
+    --color-brand--error: #eb1362;
+}
+
+.w-layout-blockcontainer {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+body {
+    color: var(--color-brand--secondary);
+    font-family: Dmsans, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.44em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-primary {
+    z-index: 2;
+    gap: 0px;
+    background-color: var(--color-brand--primary);
+    color: var(--color-neutral--white);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    font-weight: 700;
+    line-height: 1.33em;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-primary:where(.w-variant-4bc23086-06f9-0830-2e13-4f79df6fa60e), .button-primary:hover {
+    background-color: var(--color-brand--secondary);
+}
+
+.logo {
+    opacity: 1;
+    vertical-align: baseline;
+    width: auto;
+    max-width: 85%;
+    margin-top: 0px;
+    display: inline-block;
+    overflow: clip;
+}
+
+.nav-bar-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-area {
+    background-color: rgba(221, 221, 221, 0);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    display: block;
+}
+
+.header-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1164px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+
+.nav-menu-items {
+    gap: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.logo-wrap {
+    display: block;
+}
+
+.header-section {
+    z-index: 19;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    inset: 32px 0% auto;
+}
+
+.nav-menu-item {
+    padding: 0px;
+    font-weight: 500;
+    line-height: 1.33em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu-item.w--current {
+    color: var(--color-brand--primary);
+    text-decoration: none;
+}

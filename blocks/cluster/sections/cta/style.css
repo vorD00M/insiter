@@ -1,0 +1,25 @@
+html { font-family: sans-serif; }
+body { margin: 0px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+a { background-color: transparent; }
+* { box-sizing: border-box; }
+html { height: 100%; }
+body { margin: 0px; min-height: 100%; background-color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; color: rgb(51, 51, 51); }
+.w-inline-block { max-width: 100%; display: inline-block; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; margin-bottom: 10px; }
+h2 { font-size: 32px; line-height: 36px; margin-top: 20px; }
+p { margin-top: 0px; margin-bottom: 10px; }
+.w-container { margin-left: auto; margin-right: auto; max-width: 940px; }
+:root { --color-brand--secondary: #1e1e1e; --color-neutral--white: white; --color-neutral--grey: #f7f7f7; --color-brand--primary: #584efe; --color-neutral--black: black; --color-neutral--transparent: transparent; --color-brand--tertiary: #eb1362; --color-brand--alternative: #1e4aa2; --color-brand--success: #45dc84; --color-brand--error: #eb1362; }
+.w-layout-blockcontainer { max-width: 940px; margin-left: auto; margin-right: auto; display: block; }
+body { color: var(--color-brand--secondary); font-family: Dmsans, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 1.44em; }
+h2 { margin-top: 0px; margin-bottom: 0px; font-size: clamp(2rem, 1.5455rem + 1.9394vw, 3rem); font-weight: 700; line-height: 1.2em; }
+p { margin-bottom: 0px; }
+a { text-decoration: none; }
+.button-primary { z-index: 2; gap: 0px; background-color: var(--color-brand--primary); color: var(--color-neutral--white); border-radius: 8px; justify-content: center; align-items: center; padding: 14px 28px; font-weight: 700; line-height: 1.33em; transition: background-color 0.3s; display: inline-flex; position: relative; overflow: hidden; }
+.padding-global { padding-left: 15px; padding-right: 15px; }
+.base-container { width: 100%; max-width: 1140px; margin-left: auto; margin-right: auto; }
+.padding-bottom-120px { padding-bottom: 100px; }
+.margin-bottom-24px { margin-bottom: 24px; }
+.margin-bottom-40px { margin-bottom: 40px; }
+.cta-background-wrapper { background-image: url("../../images/Frame-1618873029_1Frame 1618873029.webp"); background-position: 50% center; background-repeat: no-repeat; background-size: cover; border-radius: 20px; padding: 100px 80px; }
